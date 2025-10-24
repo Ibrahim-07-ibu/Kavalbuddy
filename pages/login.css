@@ -1,0 +1,137 @@
+body {
+  background-color: #f5f6fa;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  height: 900px;
+}
+
+.main {
+  text-align: center;
+  width: 400px;}
+
+.icon-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 5px ;
+}
+
+.tagline {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.login-box h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.login-box p {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.signin-btn {
+  width: 250px;
+  padding: 10px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-decoration: none
+}
+
+.signin-btn:hover {
+  background-color: #15803d;
+}
+
+.reset-btn {
+  width: 50%;
+  padding: 10px;
+  background-color: #757678;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.reset-btn:hover {
+  background-color: #656667; 
+}
+.features {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.features h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.features p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.green { background-color: #16a34a; }
+.purple { background-color: #8b5cf6; }
+.blue { background-color: #3b82f6; }
+
+
+.footer {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
