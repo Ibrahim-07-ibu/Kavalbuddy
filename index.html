@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kaval Buddy</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style/style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
     <h2>Kaval Buddy</h2>
     <div class="status">
-      <span class="dot"></span> Inactive
+      <span class="dot"></span>
+      <span class="status-text">Inactive</span>
       <span class="icon">⚙️</span>
+      <a href="./pages/profile.html" class="profile-tab">👤</a>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="content">
-    <div class="box top">
+    <section class="box top">
       <div>
         <h3>Safety System</h3>
         <p class="inactive">System inactive</p>
       </div>
       <button class="start-btn">Start</button>
-    </div>
+    </section>
 
-    <div class="sos-section">
-      <button class="sos-btn">SOS<br>EMERGENCY</button>
-      <p class="sos-info">Start the safety system to enable SOS</p>
-    </div>
+    <section class="sos-section">
+      <button class="sos-btn">
+        <i class="ri-alert-fill"></i>
+        <span>SOS</span>
+      </button>
+      <p class="sos-info">Activate safety system to enable SOS</p>
+    </section>
 
-    <div class="box">
+    <section class="box">
       <h4>Current Location</h4>
       <p class="inactive">Location services inactive</p>
-    </div>
+    </section>
 
-    <div class="box recorder">
+    <section class="box recorder">
       <h4>Emergency Voice Recorder</h4>
       <button class="record-btn">Start Recording</button>
-      <p class="note">Recording will automatically start during SOS activation or shock detection</p>
-    </div>
+      <p class="note">Recording starts automatically during SOS or emergencies.</p>
+    </section>
 
-    <div class="box">
-      <h4>Share Location</h4>
-      <p class="inactive">Location sharing requires active system</p>
-    </div>
-
-    <div class="row">
+    <section class="row">
       <div class="box half">
         <h4>Contacts</h4>
         <p>4</p>
@@ -54,18 +60,23 @@
         <h4>Last Active</h4>
         <p class="inactive">Not active</p>
       </div>
-    </div>
-
-    <div class="box">
-      <h4>Safety System Status</h4>
-      <p class="inactive">Activate your safety system to enable location tracking and emergency features.</p>
-    </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <span class="active">Dashboard</span>
-    <span>Contacts</span>
-    <span>Safety</span>
-  </footer>
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="#" class="nav-item active">
+      <i class="ri-home-4-line"></i>
+      <span>Home</span>
+    </a>
+    <a href="./pages/contact.html" class="nav-item">
+      <i class="ri-contacts-line"></i>
+      <span>Contacts</span>
+    </a>
+    <a href="./pages/safe.html" class="nav-item">
+      <i class="ri-shield-line"></i>
+      <span>Safety</span>
+    </a>
+  </nav>
 </body>
 </html>

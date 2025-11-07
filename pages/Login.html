@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="./login.css" />
+    <title>Kaval Buddy - Login</title>
+    <link rel="stylesheet" href="../style/login.css" />
   </head>
   <body>
     <div class="main">
+      <!-- Logo Section -->
       <div class="logo">
         <img
           src="../Assets/29078b08-5a8a-4d8c-8cc2-42b9fe4325f6.png"
@@ -18,7 +19,8 @@
         <p class="tagline">Kaval Buddy — Your Safety, Our Priority.</p>
       </div>
 
-      <div class="login-box" method="get">
+      <!-- Login Box -->
+      <div class="login-box">
         <h2>Sign in to your account</h2>
         <p>Enter your credentials to access your safety dashboard</p>
 
@@ -32,15 +34,21 @@
           <label>Password</label>
           <input type="password" placeholder="Enter your password" required />
 
-          <label>Confirm Password</label>
-          <input type="password" placeholder="Enter your password" required />
+          <div class="btn-group">
+            <button type="submit" class="signin-btn">
+              <a class="sign_in" href="../index.html">Sign in</a>
+            </button>
+            <button type="reset" class="reset-btn">Reset</button>
+          </div>
 
-          <button type="submit" class="signin-btn"><a href="../index.html">Sign in</a></button>
-
-          <button type="reset" class="reset-btn">reset</button>
+          <p class="register-link">
+            Don’t have an account?
+            <a href="./register.html">Register here</a>
+          </p>
         </form>
       </div>
 
+      <!-- Features Section -->
       <div class="features">
         <h3>Your Safety Features</h3>
         <p><span class="dot green"></span> Emergency SOS</p>

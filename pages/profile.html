@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaval Buddy - Profile</title>
+  <link rel="stylesheet" href="../style/profile.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="top-left">
+      <button class="back-home" onclick="window.location.href='../index.html'">
+        ← Back to Home
+      </button>
+    </div>
+    <div class="logo">
+      <img src="../Assets/29078b08-5a8a-4d8c-8cc2-42b9fe4325f6.png" alt="Logo" class="icon" />
+      <span>Kaval Buddy</span>
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <main class="container">
+    <section class="profile-card">
+      <div class="profile-photo">
+        <img src="../Assets/29078b08-5a8a-4d8c-8cc2-42b9fe4325f6.png" alt="User Photo" />
+        <button class="edit-btn">Edit Photo</button>
+      </div>
+      <h2>Mohammed Ibrahim</h2>
+      <p class="email">ibrahim@example.com</p>
+      <p class="location">
+        <img src="../assets/location.png" alt="Location" class="small-icon" />
+        Chennai, India
+      </p>
+    </section>
+
+    <!-- Personal Info -->
+    <section class="info-card">
+      <h3>Personal Information</h3>
+      <div class="info-item">
+        <span>Full Name</span>
+        <p>Mohammed Ibrahim</p>
+      </div>
+      <div class="info-item">
+        <span>Email</span>
+        <p>ibrahim@example.com</p>
+      </div>
+      <div class="info-item">
+        <span>Phone</span>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="info-item">
+        <span>Gender</span>
+        <p>Male</p>
+      </div>
+      <div class="info-item">
+        <span>Member Since</span>
+        <p>June 2024</p>
+      </div>
+    </section>
+
+    <!-- Settings -->
+    <section class="settings-card">
+      <h3>Account Settings</h3>
+      <button class="edit-profile"><a class="edit-pro" href="../pages/edit-profile.html">Edit Profile</a></button>
+      <button class="change-password"><a class="edit-pro" href="../pages/edit-password.html">Change Password</a></button>
+    </section>
+
+    <!-- Logout -->
+    <button class="logout-btn" onclick="window.location.href='./login.html'">Logout</button>
+  </main>
+</body>
+</html>

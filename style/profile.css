@@ -1,0 +1,225 @@
+/* --- Base --- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* --- Header --- */
+.topbar {
+  background-color: #1a3e8d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+/* --- Back Home Button --- */
+.back-home {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.back-home:hover {
+  background-color: #15803d;
+}
+
+/* --- Main Container --- */
+.container {
+  padding: 16px;
+  margin-bottom: 50px;
+}
+
+/* --- Profile Card --- */
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 18px;
+}
+
+.profile-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #1a3e8d;
+  object-fit: cover;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: #1a3e8d;
+  font-size: 13px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 10px 0 2px;
+  color: #1a3e8d;
+  font-size: 18px;
+}
+
+.email {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.location {
+  font-size: 13px;
+  color: #555;
+}
+
+.small-icon {
+  width: 14px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* --- Info Card --- */
+.info-card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px 15px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+  color: #1a3e8d;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.info-item span {
+  color: #555;
+  font-weight: 500;
+}
+
+.info-item p {
+  margin: 0;
+  color: #333;
+}
+
+/* --- Settings --- */
+.settings-card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px 15px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.settings-card h3 {
+  color: #1a3e8d;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.edit-profile,
+.change-password {
+  width: 100%;
+  text-decoration: none;
+  background-color: #1a3e8d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+
+
+}
+.edit-pro{
+  color: #eee;
+  text-decoration: none;
+}
+.edit-profile:hover,
+.change-password:hover {
+  background-color: #15306d;
+}
+
+/* --- Logout Button --- */
+.logout-btn {
+  width: 100%;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 16px;
+  }
+
+  .back-home {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .info-item {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

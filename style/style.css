@@ -1,0 +1,252 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f8fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: #0b2c80;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+}
+
+.status-text {
+  color: #ddd;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.profile-tab {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 18px;
+  padding-bottom: 90px;
+}
+
+/* Box Styles */
+.box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inactive {
+  color: #999;
+  font-size: 13px;
+}
+
+.start-btn {
+  background: #00b050;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.start-btn:hover {
+  background: #009645;
+}
+
+/* SOS Button */
+.sos-section {
+  text-align: center;
+  margin: 28px 0;
+}
+
+.sos-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: none;
+  background: #ffe8e8;
+  color: #d93636;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 0 12px rgba(217, 54, 54, 0.15);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sos-btn:hover {
+  background: #ffcdcd;
+  transform: scale(1.05);
+}
+
+.sos-btn i {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.sos-info {
+  color: #777;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* Recorder */
+.recorder .record-btn {
+  background: #e84141;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.recorder .record-btn:hover {
+  background: #c92f2f;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* Row (2-column) */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+
+.half {
+  width: 48%;
+  text-align: center;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  z-index: 10;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  cursor: pointer;
+}
+
+.nav-item i {
+  font-size: 20px;
+  margin-bottom: 2px;
+  transition: color 0.25s ease;
+}
+
+/* --- Active State --- */
+.nav-item.active {
+  color: #0b2c80;
+  font-weight: 600;
+}
+
+/* --- Hover Effects --- */
+.nav-item:hover {
+  color: #00b050; /* Green on hover */
+}
+
+.nav-item:hover i {
+  color: #00b050;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .navbar h2 {
+    font-size: 16px;
+  }
+
+  .sos-btn {
+    width: 110px;
+    height: 110px;
+    font-size: 18px;
+  }
+
+  .start-btn {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .record-btn {
+    font-size: 13px;
+  }
+
+  .nav-item span {
+    font-size: 11px;
+  }
+}
