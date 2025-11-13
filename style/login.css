@@ -1,12 +1,13 @@
 /* --- Global --- */
 body {
-  background-color: #f5f6fa;
+  background: linear-gradient(135deg, #e6f0ff, #f5f6fa);
   font-family: "Poppins", Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
   height: 900px;
+  color: #222;
 }
 
 .main {
@@ -16,35 +17,39 @@ body {
 
 /* --- Logo --- */
 .icon-img {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 10px rgba(26, 62, 141, 0.15);
 }
 
 h1 {
   font-size: 22px;
   margin: 5px;
+  color: #1a3e8d;
+  font-weight: 600;
 }
 
 .tagline {
-  color: #666;
+  color: #555;
   font-size: 14px;
   margin-bottom: 25px;
 }
 
 /* --- Login Box --- */
 .login-box {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
 }
 
 .login-box h2 {
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 5px;
+  color: #1a3e8d;
 }
 
 .login-box p {
@@ -53,11 +58,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* --- Inputs --- */
 label {
   display: block;
   text-align: left;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 14px;
+  font-weight: 500;
+  color: #333;
 }
 
 input {
@@ -68,11 +76,11 @@ input {
   border-radius: 6px;
   font-size: 14px;
   outline: none;
-  transition: border-color 0.2s;
 }
 
 input:focus {
   border-color: #1a3e8d;
+  box-shadow: 0 0 5px rgba(26, 62, 141, 0.3);
 }
 
 /* --- Buttons --- */
@@ -86,33 +94,33 @@ input:focus {
 .signin-btn {
   width: 60%;
   padding: 10px;
-  background-color: #16a34a;
+  background-color: #1a3e8d;
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 15px;
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .signin-btn:hover {
-  background-color: #15803d;
+  background-color: #1a3e8d;
+  /* No color change */
 }
 
 .reset-btn {
   width: 40%;
   padding: 10px;
-  background-color: #757678;
+  background-color: #6b7280;
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 15px;
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .reset-btn:hover {
-  background-color: #656667;
+  background-color: #6b7280;
+  /* No color change */
 }
 
 /* --- Register Link --- */
@@ -126,20 +134,18 @@ input:focus {
   color: #1a3e8d;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.2s;
 }
 
 .register-link a:hover {
-  color: #0f2c6d;
   text-decoration: underline;
 }
 
 /* --- Features --- */
 .features {
-  background-color: white;
-  padding: 15px;
+  background-color: #fff;
+  padding: 18px;
   border-radius: 10px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
   text-align: left;
   margin-bottom: 15px;
 }
@@ -148,11 +154,12 @@ input:focus {
   font-size: 16px;
   margin-bottom: 10px;
   text-align: center;
+  color: #1a3e8d;
 }
 
 .features p {
   font-size: 14px;
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 .dot {
@@ -166,9 +173,11 @@ input:focus {
 .green {
   background-color: #16a34a;
 }
+
 .purple {
   background-color: #8b5cf6;
 }
+
 .blue {
   background-color: #3b82f6;
 }
@@ -176,7 +185,7 @@ input:focus {
 /* --- Footer --- */
 .footer {
   font-size: 12px;
-  color: #666;
+  color: #555;
   margin-top: 10px;
 }
 
@@ -186,9 +195,10 @@ input:focus {
   color: white;
 }
 
-.edit-pro{
+.edit-pro {
   text-decoration: none;
 }
+
 /* --- Responsive --- */
 @media (max-width: 480px) {
   .main {

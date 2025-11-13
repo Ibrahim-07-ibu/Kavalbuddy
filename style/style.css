@@ -1,72 +1,69 @@
-/* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 body {
-  background-color: #f7f8fc;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-/* Navbar */
-.navbar {
-  background: #0b2c80;
-  color: #fff;
+/* --- Header --- */
+.topbar {
+  background-color: #1a3e8d;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 18px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 12px 20px;
 }
 
-.navbar h2 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.status {
+.topbar .logo {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 13px;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  background: #888;
+.topbar .top-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #6c757d;
   border-radius: 50%;
+  display: inline-block;
 }
 
-.status-text {
-  color: #ddd;
-}
-
-.icon {
+/* --- Icon Buttons --- */
+.icon-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-}
-
-.profile-tab {
-  color: #fff;
   text-decoration: none;
-  font-size: 16px;
-  margin-left: 4px;
 }
 
-/* Main Content */
+
+.icon-btn i {
+  color: #1a3e8d;
+  font-size: 20px;
+}
+
+/* --- Main Content --- */
 .content {
-  flex: 1;
-  padding: 18px;
+  padding: 20px;
   padding-bottom: 90px;
 }
 
-/* Box Styles */
 .box {
   background: #fff;
   border-radius: 10px;
@@ -91,18 +88,17 @@ body {
   color: #fff;
   border: none;
   border-radius: 20px;
-  padding: 6px 18px;
-  font-size: 14px;
+  padding: 8px 20px;
+  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .start-btn:hover {
   background: #009645;
 }
 
-/* SOS Button */
+/* --- SOS Section --- */
 .sos-section {
   text-align: center;
   margin: 28px 0;
@@ -124,17 +120,12 @@ body {
   box-shadow: 0 0 12px rgba(217, 54, 54, 0.15);
   margin: 0 auto;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .sos-btn:hover {
   background: #ffcdcd;
   transform: scale(1.05);
-}
-
-.sos-btn i {
-  font-size: 28px;
-  margin-bottom: 4px;
 }
 
 .sos-info {
@@ -143,7 +134,7 @@ body {
   margin-top: 10px;
 }
 
-/* Recorder */
+/* --- Recorder --- */
 .recorder .record-btn {
   background: #e84141;
   color: #fff;
@@ -166,7 +157,7 @@ body {
   margin-top: 6px;
 }
 
-/* Row (2-column) */
+/* --- Row --- */
 .row {
   display: flex;
   justify-content: space-between;
@@ -178,7 +169,7 @@ body {
   text-align: center;
 }
 
-/* Bottom Navigation */
+/* --- Bottom Navigation --- */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -188,65 +179,40 @@ body {
   border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding: 8px 0;
-  z-index: 10;
+  z-index: 100;
 }
 
-.nav-item {
+.bottom-nav button {
+  background: none;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 13px;
   color: #666;
-  text-decoration: none;
-  transition: color 0.25s ease;
   cursor: pointer;
 }
 
-.nav-item i {
-  font-size: 20px;
-  margin-bottom: 2px;
-  transition: color 0.25s ease;
+.bottom-nav button i {
+  font-size: 22px;
+  margin-bottom: 4px;
 }
 
-/* --- Active State --- */
-.nav-item.active {
-  color: #0b2c80;
+.bottom-nav .active {
+  color: #1a3e8d;
   font-weight: 600;
 }
-
-/* --- Hover Effects --- */
-.nav-item:hover {
-  color: #00b050; /* Green on hover */
-}
-
-.nav-item:hover i {
-  color: #00b050;
-}
-
-/* Responsive Design */
+/* --- Responsive --- */
 @media (max-width: 480px) {
-  .navbar h2 {
-    font-size: 16px;
+  .contacts-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 
-  .sos-btn {
-    width: 110px;
-    height: 110px;
-    font-size: 18px;
-  }
-
-  .start-btn {
-    font-size: 12px;
-    padding: 6px 14px;
-  }
-
-  .record-btn {
-    font-size: 13px;
-  }
-
-  .nav-item span {
+  .bottom-nav {
     font-size: 11px;
+    padding: 6px 0;
   }
 }

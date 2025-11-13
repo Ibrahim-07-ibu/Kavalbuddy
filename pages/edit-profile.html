@@ -1,39 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edit Profile</title>
-  <link rel="stylesheet" href="../style/edit-pro.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../style/edit-pro.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Edit Profile</h2>
+      <form >
+        
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
 
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
 
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h2>Edit Profile</h2>
-    <form action="/update-profile" method="POST" enctype="multipart/form-data">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+        </select>
 
+        <label for="phone">Phone Number</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+        />
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="profile-pic">Profile Picture</label>
+        <input type="file" id="profile-pic" name="profile-pic" />
 
-  <label for="phone">Phone Number</label>
-  <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
-
-  <label for="profile-pic">Profile Picture</label>
-  <input type="file" id="profile-pic" name="profile-pic">
-
-  <div class="btn-container">
-    <button type="submit" class="btn btn-save">Save Changes</button>
-    <button type="button" class="btn btn-cancel" onclick="window.location.href='profile.html'">Cancel</button>
-  </div>
-</form>
-
-
-  </div>
-</body>
+        <div class="btn-container">
+          <button type="submit" class="btn btn-save">Save Changes</button>
+          <button
+            type="button"
+            class="btn btn-cancel"
+            onclick="window.location.href='profile.html'"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

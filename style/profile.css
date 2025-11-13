@@ -172,10 +172,25 @@ h2 {
 
 
 }
-.edit-pro{
+
+.edit-pro {
   color: #eee;
   text-decoration: none;
 }
+
+.edit-img {
+  width: 80%;
+  text-decoration: none;
+  background-color: #1a3e8d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
 .edit-profile:hover,
 .change-password:hover {
   background-color: #15306d;

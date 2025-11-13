@@ -1,0 +1,131 @@
+/* Basic Reset */
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+
+/* Overall layout */
+body{background:#f6f8fc;color:#222;}
+.sidebar{
+  width:220px;
+  background:#0A1D56;
+  color:white;
+  height:100vh;
+  float:left;
+  padding:15px;
+}
+.sidebar h2{
+  text-align:center;
+  margin-bottom:25px;
+}
+.menu a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:10px;
+  margin-bottom:5px;
+  border-radius:6px;
+}
+.menu a:hover{
+  background:#1E3E8A;
+}
+
+/* Logout as link */
+.logout{
+  display:block;
+  text-align:center;
+  background:#2E8BFD;
+  color:white;
+  padding:10px;
+  border-radius:6px;
+  margin-top:20px;
+  text-decoration:none;
+  transition:0.3s;
+}
+.logout:hover{background:#1C6DD0;}
+
+/* Main section */
+.main{
+  margin-left:240px;
+  padding:20px;
+}
+.header{
+  overflow:hidden;
+  margin-bottom:20px;
+}
+.header h1{
+  float:left;
+  color:#0A1D56;
+}
+.header p{
+  float:right;
+  color:#555;
+}
+
+/* Cards */
+.cards{
+  width:100%;
+  margin-bottom:30px;
+}
+.card{
+  width:22%;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  display:inline-block;
+  text-align:center;
+  margin:1%;
+  padding:15px;
+}
+.card h3{color:#0A1D56;margin-bottom:8px;}
+.card p{color:#1C6DD0;font-weight:bold;font-size:1.2em;}
+
+/* Chart */
+.chart{
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  padding:15px;
+  margin-bottom:25px;
+  width:600px;
+}
+.chart h3{color:#0A1D56;margin-bottom:10px;}
+.bar-container{
+  height:180px;
+  width:100%;
+}
+.bar{
+  width:30%;
+  float:left;
+  margin-right:3%;
+  text-align:center;
+  color:white;
+  border-radius:10px 10px 0 0;
+  padding-top:130px;
+  font-weight:bold;
+}
+.bar1{background:#2E8BFD;height:70%;}
+.bar2{background:#FF5F5F;height:40%;}
+.bar3{background:#FFB84C;height:55%;}
+.bar p{margin-top:5px;}
+
+/* Table */
+.table-box{
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  padding:15px;
+  margin-bottom:30px;
+}
+.table-box h3{color:#0A1D56;margin-bottom:10px;}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+th,td{
+  padding:10px;
+  text-align:left;
+  border-bottom:1px solid #eee;
+}
+th{
+  background:#0A1D56;
+  color:white;
+}
+tr:hover{background:#f1f4ff;}

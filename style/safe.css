@@ -16,7 +16,7 @@ body {
   padding: 12px 20px;
 }
 
-.topbar .logo {
+.logo {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -24,14 +24,10 @@ body {
   font-size: 18px;
 }
 
-.topbar i {
-  font-size: 20px;
-}
-
-.topbar .top-right {
+.top-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-size: 14px;
 }
 
@@ -40,16 +36,24 @@ body {
   height: 8px;
   background-color: #6c757d;
   border-radius: 50%;
-  display: inline-block;
 }
 
-/* --- Universal Icon Styling --- */
-.icon,
-.nav-icon,
-.setting-info i,
-.emergency-info i {
+/* --- Icon Buttons --- */
+.icon-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icon-btn i {
   color: #1a3e8d;
-  transition: color 0.2s;
+  font-size: 20px;
 }
 
 /* --- Section Header --- */
@@ -68,7 +72,7 @@ body {
 
 /* --- Card --- */
 .card {
-  background-color: #fff;
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 14px 18px;
@@ -77,12 +81,12 @@ body {
 }
 
 .card h4 {
-  margin: 0 0 10px;
-  font-weight: 600;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 6px;
   color: #1a3e8d;
+  font-weight: 600;
 }
 
 /* --- Settings --- */
@@ -102,6 +106,7 @@ body {
 
 .setting-info i {
   font-size: 18px;
+  color: #1a3e8d;
 }
 
 .setting-info p {
@@ -115,14 +120,10 @@ body {
   width: 34px;
   height: 18px;
   border-radius: 20px;
-  position: relative;
   background-color: #ccc;
+  position: relative;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.toggle.on {
-  background-color: #10b981;
+  transition: 0.3s;
 }
 
 .toggle::before {
@@ -132,9 +133,13 @@ body {
   left: 2px;
   width: 14px;
   height: 14px;
-  background-color: white;
+  background: white;
   border-radius: 50%;
   transition: 0.3s;
+}
+
+.toggle.on {
+  background-color: #10b981;
 }
 
 .toggle.on::before {
@@ -148,12 +153,14 @@ body {
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
 }
 
 .emergency-info {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 1 1 60%;
 }
 
 .emergency-info i {
@@ -167,10 +174,14 @@ body {
   color: #666;
 }
 
+/* Number always on right side, responsive */
 .emergency span {
+  flex: 0 0 auto;
+  text-align: right;
   color: #10b981;
   font-weight: 600;
   font-size: 13px;
+  min-width: 100px;
 }
 
 /* --- Bottom Navigation --- */
@@ -179,58 +190,50 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background: #fff;
   border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-around;
   padding: 8px 0;
 }
 
-.nav-item {
+.bottom-nav button {
+  background: none;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 13px;
   color: #666;
+  font-size: 13px;
+  cursor: pointer;
 }
 
-.nav-item a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.nav-item i {
-  font-size: 20px;
+.bottom-nav button i {
+  font-size: 22px;
   margin-bottom: 4px;
 }
 
-.nav-item.active {
+.bottom-nav .active {
   color: #1a3e8d;
   font-weight: 600;
 }
 
-/* --- Hover Effects --- */
-.nav-item:hover i,
-.setting-info:hover i,
-.section-header h3:hover i {
-  color: #10b981;
-  transition: 0.2s;
-}
-
-/* --- Responsive --- */
+/* --- Responsive Fixes --- */
 @media (max-width: 480px) {
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+  .emergency {
+    flex-direction: row;
+  }
+
+  .emergency-info {
+    flex: 1 1 70%;
+  }
+
+  .emergency span {
+    flex: 1 1 30%;
+    text-align: right;
   }
 
   .bottom-nav {
     font-size: 11px;
-    padding: 6px 0;
-  }
-
-  .nav-item i {
-    font-size: 18px;
   }
 }

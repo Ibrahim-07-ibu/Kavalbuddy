@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaval Buddy - Feedback</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="../style/admin-feedback.css"/>
+<style>
+
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Admin</h2>
+  <div class="menu">
+    <a href="admin-dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
+    <a href="admin-users.html"><i class="ri-user-line"></i> Users</a>
+    <a href="#"><i class="ri-chat-3-line"></i> Feedback</a>
+  </div>
+  <a class="logout" href="../pages/Login.html">Logout</a>
+</div>
+
+<!-- Main -->
+<div class="main">
+  <div class="header">
+    <h1>Feedback Management</h1>
+    <p>Review and Track User Feedback</p>
+  </div>
+
+  <div class="section">
+    <h2>Feedback Summary</h2>
+    <table>
+      <tr>
+        <th>User</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Message</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>Alice Johnson</td>
+        <td>alice@mail.com</td>
+        <td>Oct 15, 2025</td>
+        <td>Great app! It helped me contact police quickly.</td>
+        <td><span class="status resolved">Resolved</span></td>
+      </tr>
+
+      <tr>
+        <td>John Miller</td>
+        <td>john@mail.com</td>
+        <td>Oct 10, 2025</td>
+        <td>Map didn’t load properly on mobile.</td>
+        <td><span class="status pending">Pending</span></td>
+      </tr>
+
+      <tr>
+        <td>Mary Brown</td>
+        <td>mary@mail.com</td>
+        <td>Oct 8, 2025</td>
+        <td>Can you add more emergency contacts options?</td>
+        <td><span class="status pending">Pending</span></td>
+      </tr>
+
+      <tr>
+        <td>Robert Lee</td>
+        <td>robert@mail.com</td>
+        <td>Sep 28, 2025</td>
+        <td>Old version had better location accuracy.</td>
+        <td><span class="status rejected">Rejected</span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

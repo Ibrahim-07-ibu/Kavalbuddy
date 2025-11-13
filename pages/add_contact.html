@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaval Buddy - Add Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../style/add-contact.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <!-- Back Button -->
+      <a href="../pages/contact.html" class="back-btn">
+        <i class="ri-arrow-left-line"></i>
+      </a>
+
+      <h2>Add New Contact</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mobile Number</label>
+          <input type="tel" id="phone" placeholder="Enter mobile number" required pattern="[0-9]{10}" maxlength="10">
+        </div>
+
+        <div class="form-group">
+          <label for="relation">Relation</label>
+          <input type="text" id="relation" placeholder="e.g. Mother, Friend" required>
+        </div>
+
+        <button type="submit" class="add-btn">Add Contact</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

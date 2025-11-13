@@ -1,82 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kaval Buddy</title>
-  <link rel="stylesheet" href="./style/style.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <h2>Kaval Buddy</h2>
-    <div class="status">
-      <span class="dot"></span>
-      <span class="status-text">Inactive</span>
-      <span class="icon">⚙️</span>
-      <a href="./pages/profile.html" class="profile-tab">👤</a>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="content">
-    <section class="box top">
-      <div>
-        <h3>Safety System</h3>
-        <p class="inactive">System inactive</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaval Buddy - Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="logo">
+        <i class="ri-shield-line"></i>
+        <span>Kaval Buddy</span>
       </div>
-      <button class="start-btn">Start</button>
-    </section>
+      <div class="top-right">
+        <span class="status-dot"></span>
+        <span>Inactive</span>
 
-    <section class="sos-section">
-      <button class="sos-btn">
-        <i class="ri-alert-fill"></i>
-        <span>SOS</span>
+        <a class="icon-btn" href="../pages/profile.html">
+          <i class="ri-user-line"></i>
+        </a>
+
+        <!-- Settings Button -->
+        <a class="icon-btn" href="../pages/safe.html">
+          <i class="ri-settings-3-line"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+      <section class="box top">
+        <div>
+          <h3>Safety System</h3>
+          <p class="inactive">System inactive</p>
+        </div>
+        <button class="start-btn">Start</button>
+      </section>
+
+      <section class="sos-section">
+        <button class="sos-btn">
+          <i class="ri-alert-fill"></i>
+          <span>SOS</span>
+        </button>
+        <p class="sos-info">Activate safety system to enable SOS</p>
+      </section>
+
+      <section class="box">
+        <h4>Current Location</h4>
+        <p class="inactive">Location services inactive</p>
+      </section>
+
+      <section class="box recorder">
+        <h4>Emergency Voice Recorder</h4>
+        <button class="record-btn">Start Recording</button>
+        <p class="note">
+          Recording starts automatically during SOS or emergencies.
+        </p>
+      </section>
+
+      <section class="row">
+        <div class="box half">
+          <h4>Contacts</h4>
+          <p>4</p>
+        </div>
+        <div class="box half">
+          <h4>Last Active</h4>
+          <p class="inactive">Not active</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <button
+        class="nav-item active"
+        onclick="window.location.href='./index.html'"
+      >
+        <i class="ri-home-4-line"></i>
+        <span>Dashboard</span>
       </button>
-      <p class="sos-info">Activate safety system to enable SOS</p>
-    </section>
 
-    <section class="box">
-      <h4>Current Location</h4>
-      <p class="inactive">Location services inactive</p>
-    </section>
+      <button
+        class="nav-item"
+        onclick="window.location.href='./pages/contact.html'"
+      >
+        <i class="ri-contacts-line"></i>
+        <span>Contacts</span>
+      </button>
 
-    <section class="box recorder">
-      <h4>Emergency Voice Recorder</h4>
-      <button class="record-btn">Start Recording</button>
-      <p class="note">Recording starts automatically during SOS or emergencies.</p>
-    </section>
-
-    <section class="row">
-      <div class="box half">
-        <h4>Contacts</h4>
-        <p>4</p>
-      </div>
-      <div class="box half">
-        <h4>Last Active</h4>
-        <p class="inactive">Not active</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Bottom Navigation -->
-  <nav class="bottom-nav">
-    <a href="#" class="nav-item active">
-      <i class="ri-home-4-line"></i>
-      <span>Home</span>
-    </a>
-    <a href="./pages/contact.html" class="nav-item">
-      <i class="ri-contacts-line"></i>
-      <span>Contacts</span>
-    </a>
-    <a href="./pages/safe.html" class="nav-item">
-      <i class="ri-shield-line"></i>
-      <span>Safety</span>
-    </a>
-  </nav>
-</body>
+      <button
+        class="nav-item"
+        onclick="window.location.href='./pages/safe.html'"
+      >
+        <i class="ri-shield-line"></i>
+        <span>Safety</span>
+      </button>
+    </nav>
+  </body>
 </html>

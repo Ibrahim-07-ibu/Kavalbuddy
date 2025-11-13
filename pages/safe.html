@@ -1,139 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kaval Buddy - Safety Settings</title>
-  <link rel="stylesheet" href="../style/safe.css" />
-  <!-- Font Awesome CDN -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-</head>
-<body>
-  <!-- Header -->
-  <header class="topbar">
-    <div class="logo">
-      <i class="fa-solid fa-shield-halved"></i>
-      <span>Kaval Buddy</span>
-    </div>
-    <div class="top-right">
-      <span class="status-dot"></span>
-      <span>Inactive</span>
-      <i class="fa-regular fa-user icon"></i>
-      <i class="fa-solid fa-gear icon"></i>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaval Buddy - Safety Settings</title>
+    <link rel="stylesheet" href="../style/safe.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
 
-  <!-- Main Content -->
-  <main>
-    <div class="section-header">
-      <h3>
-        <i class="fa-solid fa-shield-halved"></i> Safety Settings
-      </h3>
-    </div>
+    <!-- Header -->
+    <header class="topbar">
+      <div class="logo">
+        <i class="ri-shield-line"></i>
+        <span>Kaval Buddy</span>
+      </div>
+      <div class="top-right">
+        <span class="status-dot"></span>
+        <span>Inactive</span>
 
-    <div class="card">
-      <h4><i class="fa-solid fa-lock"></i> Safety Settings</h4>
+        <!-- Profile Button -->
+        <a class="icon-btn" href="../pages/profile.html">
+          <i class="ri-user-line"></i>
+        </a>
 
-      <div class="setting">
-        <div class="setting-info">
-          <i class="fa-solid fa-bell"></i>
-          <div>
-            <strong>Push Notifications</strong>
-            <p>Get safety alerts and reminders</p>
-          </div>
-        </div>
-        <div class="toggle on"></div>
+        <!-- Settings Button -->
+        <a class="icon-btn" href="../pages/safe.html">
+          <i class="ri-settings-3-line"></i>
+        </a>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <div class="section-header">
+        <h3><i class="fa-solid fa-shield-halved"></i> Safety Settings</h3>
       </div>
 
-      <div class="setting">
-        <div class="setting-info">
-          <i class="fa-solid fa-location-dot"></i>
-          <div>
-            <strong>Location Sharing</strong>
-            <p>Share location with emergency contacts</p>
+      <div class="card">
+        <h4><i class="fa-solid fa-lock"></i> Safety Settings</h4>
+
+        <div class="setting">
+          <div class="setting-info">
+            <i class="fa-solid fa-bell"></i>
+            <div>
+              <strong>Push Notifications</strong>
+              <p>Get safety alerts and reminders</p>
+            </div>
           </div>
+          <div class="toggle on"></div>
         </div>
-        <div class="toggle off"></div>
+
+        <div class="setting">
+          <div class="setting-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Location Sharing</strong>
+              <p>Share location with emergency contacts</p>
+            </div>
+          </div>
+          <div class="toggle off"></div>
+        </div>
+
+        <div class="setting">
+          <div class="setting-info">
+            <i class="fa-solid fa-microphone"></i>
+            <div>
+              <strong>Auto Voice Recording</strong>
+              <p>Record audio during emergencies</p>
+            </div>
+          </div>
+          <div class="toggle on"></div>
+        </div>
       </div>
 
-      <div class="setting">
-        <div class="setting-info">
-          <i class="fa-solid fa-microphone"></i>
-          <div>
-            <strong>Auto Voice Recording</strong>
-            <p>Record audio during emergencies</p>
+      <div class="card">
+        <h4><i class="fa-solid fa-phone"></i> Emergency Numbers</h4>
+
+        <div class="emergency">
+          <div class="emergency-info">
+            <i class="fa-solid fa-truck-medical"></i>
+            <div>
+              <strong>Emergency Services</strong>
+              <p>Police, Fire, Medical</p>
+            </div>
           </div>
+          <span>911</span>
         </div>
-        <div class="toggle on"></div>
-      </div>
-    </div>
 
-    <div class="card">
-      <h4><i class="fa-solid fa-phone"></i> Emergency Numbers</h4>
-
-      <div class="emergency">
-        <div class="emergency-info">
-          <i class="fa-solid fa-truck-medical"></i>
-          <div>
-            <strong>Emergency Services</strong>
-            <p>Police, Fire, Medical</p>
+        <div class="emergency">
+          <div class="emergency-info">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <div>
+              <strong>Domestic Violence Hotline</strong>
+              <p>24/7 Support</p>
+            </div>
           </div>
+          <span>1-800-799-7233</span>
         </div>
-        <span>911</span>
-      </div>
 
-      <div class="emergency">
-        <div class="emergency-info">
-          <i class="fa-solid fa-hand-holding-heart"></i>
-          <div>
-            <strong>Domestic Violence Hotline</strong>
-            <p>24/7 Support</p>
+        <div class="emergency">
+          <div class="emergency-info">
+            <i class="fa-solid fa-comment-dots"></i>
+            <div>
+              <strong>Crisis Text Line</strong>
+              <p>24/7 Crisis Support</p>
+            </div>
           </div>
+          <span>Text HOME to 741741</span>
         </div>
-        <span>1-800-799-7233</span>
-      </div>
 
-      <div class="emergency">
-        <div class="emergency-info">
-          <i class="fa-solid fa-comment-dots"></i>
-          <div>
-            <strong>Crisis Text Line</strong>
-            <p>24/7 Crisis Support</p>
+        <div class="emergency">
+          <div class="emergency-info">
+            <i class="fa-solid fa-ribbon"></i>
+            <div>
+              <strong>RAINN Hotline</strong>
+              <p>Sexual Assault Support</p>
+            </div>
           </div>
+          <span>1-800-656-4673</span>
         </div>
-        <span>Text HOME to 741741</span>
       </div>
+    </main>
 
-      <div class="emergency">
-        <div class="emergency-info">
-          <i class="fa-solid fa-ribbon"></i>
-          <div>
-            <strong>RAINN Hotline</strong>
-            <p>Sexual Assault Support</p>
-          </div>
-        </div>
-        <span>1-800-656-4673</span>
-      </div>
-    </div>
-  </main>
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="window.location.href='/index.html'">
+        <i class="ri-home-4-line"></i>
+        <span>Dashboard</span>
+      </button>
 
-  <!-- Bottom Navigation -->
-  <nav class="bottom-nav">
-    <div class="nav-item">
-      <i class="fa-solid fa-house nav-icon"></i>
-      <span><a href="../index.html">Dashboard</a></span>
-    </div>
-    <div class="nav-item">
-      <i class="fa-solid fa-address-book nav-icon"></i>
-      <span><a href="../pages/contact.html">Contacts</a></span>
-    </div>
-    <div class="nav-item active">
-      <i class="fa-solid fa-shield-halved nav-icon"></i>
-      <span><a href="../pages/safe.html">Safety</a></span>
-    </div>
-  </nav>
-</body>
+      <button
+        class="nav-item"
+        onclick="window.location.href='../pages/contact.html'"
+      >
+        <i class="ri-contacts-line"></i>
+        <span>Contacts</span>
+      </button>
+
+      <button
+        class="nav-item active"
+        onclick="window.location.href='../pages/safe.html'"
+      >
+        <i class="ri-shield-line"></i>
+        <span>Safety</span>
+      </button>
+    </nav>
+  </body>
 </html>

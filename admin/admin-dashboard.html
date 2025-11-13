@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaval Buddy - Admin Dashboard</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="../style/admin-dashboard.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Admin</h2>
+  <div class="menu">
+    <a href="#"><i class="ri-dashboard-line"></i> Dashboard</a>
+    <a href="admin-users.html"><i class="ri-user-line"></i> Users</a>
+    <a href="admin-feedback.html"><i class="ri-chat-3-line"></i> Feedback</a>
+  </div>
+  <a class="logout" href="../pages/Login.html">Logout</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+  <div class="header">
+    <h1>Dashboard</h1>
+    <p>Welcome, Admin 👋</p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><h3>Total Users</h3><p>45</p></div>
+    <div class="card"><h3>Total SOS Alerts</h3><p>12</p></div>
+    <div class="card"><h3>Resolved</h3><p>8</p></div>
+    <div class="card"><h3>Not Resolved</h3><p>4</p></div>
+  </div>
+
+  <div class="chart">
+    <h3>Alert Status Overview</h3>
+    <div class="bar-container">
+      <div class="bar bar1">Resolved<br>8</div>
+      <div class="bar bar2">Not Resolved<br>4</div>
+      <div class="bar bar3">Active<br>5</div>
+    </div>
+  </div>
+
+  <div class="table-box">
+    <h3>Recent SOS Alerts</h3>
+    <table>
+      <tr><th>User</th><th>Location</th><th>Status</th><th>Time</th></tr>
+      <tr><td>Ravi Kumar</td><td>Chennai</td><td>Resolved</td><td>2 hrs ago</td></tr>
+      <tr><td>Priya S</td><td>Madurai</td><td>Not Resolved</td><td>10 mins ago</td></tr>
+      <tr><td>Arun M</td><td>Coimbatore</td><td>Resolved</td><td>1 day ago</td></tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
