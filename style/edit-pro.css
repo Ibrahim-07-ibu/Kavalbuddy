@@ -1,38 +1,38 @@
 /* --- Global Styles --- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 /* --- Container --- */
 .container {
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  text-align: center;
-  color: #1a3e8d;
-  margin-bottom: 30px;
+    text-align: center;
+    color: #1a3e8d;
+    margin-bottom: 30px;
 }
 
 /* --- Form Elements --- */
 form label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 500;
-  color: #1a3e8d;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #1a3e8d;
 }
 
 /* Inputs and Select */
@@ -40,70 +40,70 @@ form input[type="text"],
 form input[type="email"],
 form input[type="file"],
 form select {
-  width: 100%;
-  padding: 10px 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  transition: border 0.3s;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s;
 }
 
 form input:focus,
 form select:focus {
-  outline: none;
-  border-color: #1a3e8d;
+    outline: none;
+    border-color: #1a3e8d;
 }
 
 /* --- Buttons --- */
 .btn {
-  padding: 12px 22px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-right: 10px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 10px;
 }
 
 .btn-save {
-  background-color: #28a745;
-  color: #fff;
+    background-color: #28a745;
+    color: #fff;
 }
 
 .btn-save:hover {
-  background-color: #218838;
+    background-color: #218838;
 }
 
 .btn-cancel {
-  background-color: #dc3545;
-  color: #fff;
+    background-color: #dc3545;
+    color: #fff;
 }
 
 .btn-cancel:hover {
-  background-color: #c82333;
+    background-color: #c82333;
 }
 
 .btn-container {
-  text-align: center;
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* --- Responsive --- */
 @media (max-width: 640px) {
-  .container {
-    margin: 20px;
-    padding: 20px;
-  }
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
 
-  .btn {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
-  .btn-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

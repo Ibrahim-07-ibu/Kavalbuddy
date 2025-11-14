@@ -203,6 +203,7 @@ body {
   color: #1a3e8d;
   font-weight: 600;
 }
+
 /* --- Responsive --- */
 @media (max-width: 480px) {
   .contacts-header {
