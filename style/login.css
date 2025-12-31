@@ -1,6 +1,5 @@
 /* --- Global --- */
 body {
-  background: linear-gradient(135deg, #e6f0ff, #f5f6fa);
   font-family: "Poppins", Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -21,7 +20,7 @@ body {
   height: 80px;
   border-radius: 12px;
   margin-bottom: 12px;
-  box-shadow: 0 0 10px rgba(26, 62, 141, 0.15);
+  box-shadow: 10px 10px 15px rgba(26, 62, 141, 0.15);
 }
 
 h1 {

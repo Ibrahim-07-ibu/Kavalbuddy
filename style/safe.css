@@ -126,7 +126,7 @@ body {
   transition: 0.3s;
 }
 
-.toggle::before {
+.toggle:before {
   content: "";
   position: absolute;
   top: 2px;
