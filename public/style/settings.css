@@ -1,0 +1,315 @@
+/* ========== SECTION HEADER ========== */
+.section-header {
+  padding: 20px;
+}
+
+.section-header h3 {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-header h3 i {
+  font-size: 20px;
+}
+
+.section-header p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* ========== SETTINGS CARD ========== */
+.settings-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin: 0 20px 20px;
+  box-shadow: var(--shadow);
+}
+
+.settings-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ========== SETTING ITEM ========== */
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f3f4f6;
+  padding: 10px 0;
+}
+
+.setting:last-child {
+  border-bottom: none;
+}
+
+.setting-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+}
+
+.setting-info i {
+  font-size: 18px;
+  color: var(--primary);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.setting-info .setting-text {
+  flex: 1;
+}
+
+.setting-info .setting-text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.setting-info .setting-text span {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ========== TOGGLE SWITCH ========== */
+.toggle {
+  width: 34px;
+  height: 18px;
+  border-radius: 18px;
+  background-color: #9ca3af;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex-shrink: 0;
+  border: none;
+  padding: 0;
+}
+
+.toggle::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--white);
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle.on {
+  background-color: var(--accent);
+}
+
+.toggle.on::before {
+  transform: translateX(16px);
+}
+
+/* ========== EMERGENCY NUMBER ========== */
+.emergency-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.emergency-number:last-child {
+  border-bottom: none;
+}
+
+.emergency-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.emergency-info i {
+  color: var(--danger);
+  font-size: 18px;
+}
+
+.emergency-info .emergency-text {
+  flex: 1;
+}
+
+.emergency-info .emergency-text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.emergency-info .emergency-text span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.emergency-number span.phone-number {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.emergency-number .edit-number {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  transition: opacity 0.2s;
+}
+
+.emergency-number .edit-number:hover {
+  opacity: 0.7;
+}
+
+/* ========== TIME DELAY SELECTOR ========== */
+.time-delay {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.time-delay:last-child {
+  border-bottom: none;
+}
+
+.time-delay .delay-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+}
+
+.time-delay .delay-info i {
+  color: var(--primary);
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.time-delay .delay-info p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.time-delay select {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.time-delay select:focus {
+  border-color: var(--primary);
+}
+
+/* ========== SOUND SETTINGS ========== */
+.sound-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.sound-option:last-child {
+  border-bottom: none;
+}
+
+.sound-option .sound-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+}
+
+.sound-option .sound-info i {
+  color: var(--primary);
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.sound-option .sound-info p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ========== BACK BUTTON ========== */
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+  opacity: 0.7;
+}
+
+.back-btn i {
+  font-size: 16px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .settings-card {
+    margin: 0 16px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header {
+    padding: 16px;
+  }
+
+  .section-header h3 {
+    font-size: 16px;
+  }
+
+  .settings-card {
+    margin: 0 12px 14px;
+    padding: 12px 14px;
+  }
+
+  .setting {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .emergency-number {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

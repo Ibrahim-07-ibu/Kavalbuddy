@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaval Buddy Admin - Feedback</title>
+  <link rel="stylesheet" href="../../vendor/remixicon/remixicon.css">
+  <link rel="stylesheet" href="../../style/base.css">
+  <link rel="stylesheet" href="../../style/admin.css">
+</head>
+<body>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Admin navigation">
+    <h2><i class="ri-shield-user-line"></i> Admin Panel</h2>
+    <nav class="menu">
+      <a href="dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
+      <a href="users.html"><i class="ri-user-line"></i> Users</a>
+      <a href="feedback.html" class="active" aria-current="page"><i class="ri-chat-3-line"></i> Feedback</a>
+    </nav>
+    <a href="../../pages/login.html" class="logout"><i class="ri-logout-box-r-line"></i> Logout</a>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="ri-menu-line"></i></button>
+        <div>
+          <h1>Feedback Management</h1>
+          <p class="text-muted">Review and track user feedback</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <h3>All Feedback</h3>
+      <table>
+        <caption class="hidden">All user feedback submissions</caption>
+        <thead>
+          <tr>
+            <th scope="col">User</th>
+            <th scope="col">Email</th>
+            <th scope="col">Date</th>
+            <th scope="col">Message</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="feedback-table">
+          <tr>
+            <td>Alice Johnson</td>
+            <td>alice@example.com</td>
+            <td>Oct 15, 2025</td>
+            <td>Great app! It helped me contact police quickly.</td>
+            <td><span class="status-badge resolved">Resolved</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="view-btn" title="View details"><i class="ri-eye-line"></i></button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>John Miller</td>
+            <td>john@example.com</td>
+            <td>Oct 10, 2025</td>
+            <td>Map didn't load properly on mobile.</td>
+            <td><span class="status-badge pending">Pending</span></td>
+            <td>
+              <div class="table-actions">
+                <select class="feedback-status-select" aria-label="Change feedback status">
+                  <option value="pending" selected>Pending</option>
+                  <option value="resolved">Resolved</option>
+                  <option value="rejected">Rejected</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Mary Brown</td>
+            <td>mary@example.com</td>
+            <td>Oct 8, 2025</td>
+            <td>Can you add more emergency contacts options?</td>
+            <td><span class="status-badge pending">Pending</span></td>
+            <td>
+              <div class="table-actions">
+                <select class="feedback-status-select" aria-label="Change feedback status">
+                  <option value="pending" selected>Pending</option>
+                  <option value="resolved">Resolved</option>
+                  <option value="rejected">Rejected</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Robert Lee</td>
+            <td>robert@example.com</td>
+            <td>Sep 28, 2025</td>
+            <td>Old version had better location accuracy.</td>
+            <td><span class="status-badge blocked">Rejected</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="view-btn" title="View details"><i class="ri-eye-line"></i></button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="../../js/app.js"></script>
+  <script src="../../js/admin.js"></script>
+</body>
+</html>

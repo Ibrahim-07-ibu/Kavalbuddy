@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaval Buddy Admin - Users</title>
+  <link rel="stylesheet" href="../../vendor/remixicon/remixicon.css">
+  <link rel="stylesheet" href="../../style/base.css">
+  <link rel="stylesheet" href="../../style/admin.css">
+</head>
+<body>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Admin navigation">
+    <h2><i class="ri-shield-user-line"></i> Admin Panel</h2>
+    <nav class="menu">
+      <a href="dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a>
+      <a href="users.html" class="active" aria-current="page"><i class="ri-user-line"></i> Users</a>
+      <a href="feedback.html"><i class="ri-chat-3-line"></i> Feedback</a>
+    </nav>
+    <a href="../../pages/login.html" class="logout"><i class="ri-logout-box-r-line"></i> Logout</a>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="ri-menu-line"></i></button>
+        <div>
+          <h1>All Users</h1>
+          <p class="text-muted">Manage user accounts</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-container mb-3">
+      <h3>Current Users</h3>
+      <table>
+        <caption class="hidden">List of current active users</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Joined</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="users-table">
+          <tr>
+            <td>Alice Johnson</td>
+            <td>alice@example.com</td>
+            <td>Sep 15, 2025</td>
+            <td><span class="status-badge active">Active</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="delete-btn" title="Block user"><i class="ri-lock-line"></i> Block</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>John Miller</td>
+            <td>john@example.com</td>
+            <td>Oct 02, 2025</td>
+            <td><span class="status-badge active">Active</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="delete-btn" title="Block user"><i class="ri-lock-line"></i> Block</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Mary Brown</td>
+            <td>mary@example.com</td>
+            <td>Aug 22, 2025</td>
+            <td><span class="status-badge active">Active</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="delete-btn" title="Block user"><i class="ri-lock-line"></i> Block</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Priya S</td>
+            <td>priya@example.com</td>
+            <td>Nov 10, 2025</td>
+            <td><span class="status-badge active">Active</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="delete-btn" title="Block user"><i class="ri-lock-line"></i> Block</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-container">
+      <h3>Past Users</h3>
+      <table>
+        <caption class="hidden">List of past or removed users</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Joined</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Robert Lee</td>
+            <td>robert@example.com</td>
+            <td>May 14, 2025</td>
+            <td><span class="status-badge blocked">Removed</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="view-btn" title="View user"><i class="ri-eye-line"></i></button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Sophia Adams</td>
+            <td>sophia@example.com</td>
+            <td>Jun 09, 2025</td>
+            <td><span class="status-badge unverified">Inactive</span></td>
+            <td>
+              <div class="table-actions">
+                <button class="view-btn" title="View user"><i class="ri-eye-line"></i></button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="../../js/app.js"></script>
+  <script src="../../js/admin.js"></script>
+</body>
+</html>

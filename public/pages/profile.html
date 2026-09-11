@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your Kaval Buddy profile" />
+    <title>Kaval Buddy - Profile</title>
+    <link
+      href="../vendor/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/base.css" />
+    <link rel="stylesheet" href="../style/profile.css" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <header class="topbar" role="banner">
+      <div class="logo">
+        <a href="../index.html" style="display:flex;align-items:center;gap:6px;color:var(--white);text-decoration:none;">
+          <i class="ri-arrow-left-line" aria-hidden="true"></i>
+          <span style="font-size:14px;">Back to Home</span>
+        </a>
+      </div>
+      <div class="top-right">
+        <span style="font-size:13px;color:rgba(255,255,255,0.8);">Profile</span>
+      </div>
+    </header>
+
+    <!-- Profile Content -->
+    <main class="container" role="main">
+      <!-- Profile Card -->
+      <section class="profile-card" aria-label="Profile information">
+        <div class="profile-photo">
+          <div class="avatar-placeholder" style="width:100px;height:100px;border-radius:50%;background:var(--primary);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:40px;margin:0 auto;" id="profile-info">
+            <i class="ri-user-line" aria-hidden="true"></i>
+          </div>
+        </div>
+        <h2 id="user-name">John Doe</h2>
+        <p class="email" id="user-email">john@example.com</p>
+        <p class="phone" id="user-location">
+          <i class="ri-map-pin-line" aria-hidden="true" style="font-size:14px;"></i>
+          Chennai, India
+        </p>
+      </section>
+
+      <!-- Personal Information -->
+      <section class="info-card" aria-label="Personal information">
+        <h3>Personal Information</h3>
+        <div class="info-item">
+          <span class="info-label">
+            <i class="ri-user-line" aria-hidden="true"></i>
+            Full Name
+          </span>
+          <span class="info-value" id="info-name">John Doe</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">
+            <i class="ri-mail-line" aria-hidden="true"></i>
+            Email
+          </span>
+          <span class="info-value" id="info-email">john@example.com</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">
+            <i class="ri-phone-line" aria-hidden="true"></i>
+            Phone
+          </span>
+          <span class="info-value" id="info-phone">+91 98765 43210</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">
+            <i class="ri-user-heart-line" aria-hidden="true"></i>
+            Gender
+          </span>
+          <span class="info-value" id="info-gender">Not specified</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">
+            <i class="ri-calendar-line" aria-hidden="true"></i>
+            Member Since
+          </span>
+          <span class="info-value" id="info-joined">Jan 2024</span>
+        </div>
+      </section>
+
+      <!-- Account Settings -->
+      <section class="settings-card" aria-label="Account settings">
+        <h3>Account Settings</h3>
+        <a href="edit-profile.html" class="btn-edit" aria-label="Edit profile">
+          <i class="ri-edit-line" aria-hidden="true"></i>
+          Edit Profile
+        </a>
+        <a href="edit-password.html" class="btn-change-pw" aria-label="Change password">
+          <i class="ri-lock-line" aria-hidden="true"></i>
+          Change Password
+        </a>
+      </section>
+
+      <!-- Logout -->
+      <button class="logout-btn" id="logout-btn" aria-label="Logout from account">
+        <i class="ri-logout-box-r-line" aria-hidden="true"></i>
+        Logout
+      </button>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav" role="navigation" aria-label="Main navigation">
+      <a href="/index.html">
+        <i class="ri-home-4-line" aria-hidden="true"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="/pages/contacts.html">
+        <i class="ri-contacts-line" aria-hidden="true"></i>
+        <span>Contacts</span>
+      </a>
+      <a href="/pages/settings.html">
+        <i class="ri-shield-line" aria-hidden="true"></i>
+        <span>Safety</span>
+      </a>
+      <a href="/pages/map.html">
+        <i class="ri-map-pin-line" aria-hidden="true"></i>
+        <span>Map</span>
+      </a>
+    </nav>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kaval Buddy map and location services" />
+    <title>Kaval Buddy - Map</title>
+    <link
+      href="../vendor/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../vendor/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="../style/base.css" />
+    <link rel="stylesheet" href="../style/map.css" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <header class="topbar" role="banner">
+      <div class="logo">
+        <i class="ri-shield-line" aria-hidden="true"></i>
+        <span>Kaval Buddy</span>
+      </div>
+      <div class="top-right">
+        <a class="icon-btn" href="profile.html" aria-label="Profile">
+          <i class="ri-user-line" aria-hidden="true"></i>
+        </a>
+        <a class="icon-btn" href="settings.html" aria-label="Settings">
+          <i class="ri-settings-3-line" aria-hidden="true"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Map Container -->
+    <main class="map-container" role="main">
+      <!-- Leaflet Map -->
+      <div id="map" aria-label="Interactive map"></div>
+
+      <!-- Live Tracking Badge -->
+      <div class="live-tracking-badge" id="tracking-badge" style="display:none;" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Live Tracking</span>
+      </div>
+
+      <!-- Map Controls -->
+      <div class="map-controls" role="toolbar" aria-label="Map controls">
+        <button class="map-btn" id="my-location-btn" aria-label="Go to my location">
+          <i class="ri-crosshair-line" aria-hidden="true"></i>
+          <span>My Location</span>
+        </button>
+        <button class="map-btn" id="tracking-btn" aria-label="Toggle live tracking">
+          <i class="ri-satellite-line" aria-hidden="true"></i>
+          <span>Live Tracking</span>
+        </button>
+        <button class="map-btn" id="layer-toggle" aria-label="Toggle map layer">
+          <i class="ri-road-map-line" aria-hidden="true"></i>
+          <span>Satellite</span>
+        </button>
+      </div>
+
+      <!-- Search Bar -->
+      <div style="position:absolute;top:10px;left:10px;right:120px;z-index:1000;">
+        <input
+          type="text"
+          id="map-search"
+          class="route-input"
+          placeholder="Search location..."
+          aria-label="Search for a location"
+          style="width:100%;box-shadow:0 2px 8px rgba(0,0,0,0.15);"
+        />
+        <div id="search-results" class="search-results" role="listbox" aria-label="Search results"></div>
+      </div>
+
+      <!-- Location Info Panel -->
+      <div class="location-info" id="location-info" aria-label="Current location information">
+        <h4>
+          <i class="ri-map-pin-line" aria-hidden="true"></i>
+          Current Location
+        </h4>
+        <p class="address" id="current-address">Fetching address...</p>
+        <p class="coordinates" id="current-coordinates">Lat: ---, Lng: ---</p>
+
+        <!-- Route Controls -->
+        <div class="route-controls" aria-label="Route planning">
+          <input
+            type="text"
+            id="route-from"
+            class="route-input"
+            placeholder="From"
+            aria-label="Route starting point"
+          />
+          <input
+            type="text"
+            id="route-to"
+            class="route-input"
+            placeholder="To"
+            aria-label="Route destination"
+          />
+          <button class="route-btn" id="route-btn" aria-label="Get route">
+            <i class="ri-route-line" aria-hidden="true"></i>
+            Route
+          </button>
+        </div>
+        <div id="route-info" style="margin-top:6px;font-size:12px;color:var(--primary);font-weight:600;" aria-live="polite"></div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav" role="navigation" aria-label="Main navigation">
+      <a href="/index.html">
+        <i class="ri-home-4-line" aria-hidden="true"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="/pages/contacts.html">
+        <i class="ri-contacts-line" aria-hidden="true"></i>
+        <span>Contacts</span>
+      </a>
+      <a href="/pages/settings.html">
+        <i class="ri-shield-line" aria-hidden="true"></i>
+        <span>Safety</span>
+      </a>
+      <a href="/pages/map.html" class="active" aria-current="page">
+        <i class="ri-map-pin-line" aria-hidden="true"></i>
+        <span>Map</span>
+      </a>
+    </nav>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../vendor/leaflet/leaflet.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/map.js"></script>
+  </body>
+</html>

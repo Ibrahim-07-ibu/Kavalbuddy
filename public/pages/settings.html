@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kaval Buddy safety settings" />
+    <title>Kaval Buddy - Settings</title>
+    <link
+      href="../vendor/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/base.css" />
+    <link rel="stylesheet" href="../style/settings.css" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <header class="topbar" role="banner">
+      <div class="logo">
+        <i class="ri-shield-line" aria-hidden="true"></i>
+        <span>Kaval Buddy</span>
+      </div>
+      <div class="top-right">
+        <a class="icon-btn" href="profile.html" aria-label="Profile">
+          <i class="ri-user-line" aria-hidden="true"></i>
+        </a>
+        <a class="icon-btn" href="settings.html" aria-label="Settings" style="background:rgba(255,255,255,0.2);">
+          <i class="ri-settings-3-line" aria-hidden="true" style="color:var(--white);"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Safety Settings Section -->
+    <main class="container" role="main">
+      <section class="section-header" aria-label="Safety settings">
+        <h3>
+          <i class="ri-shield-line" aria-hidden="true"></i>
+          Safety Settings
+        </h3>
+        <p>Configure your safety preferences and emergency settings.</p>
+      </section>
+
+      <!-- Safety Toggles -->
+      <section class="settings-card" aria-label="Notification and sharing settings">
+        <h4>Notifications & Sharing</h4>
+
+        <!-- Push Notifications -->
+        <div class="setting">
+          <div class="setting-info">
+            <i class="ri-notification-3-line" aria-hidden="true"></i>
+            <div class="setting-text">
+              <p>Push Notifications</p>
+              <span>Get safety alerts and reminders</span>
+            </div>
+          </div>
+          <button
+            class="toggle toggle-switch"
+            data-setting="pushNotifications"
+            role="switch"
+            aria-checked="false"
+            aria-label="Toggle push notifications"
+          ></button>
+        </div>
+
+        <!-- Location Sharing -->
+        <div class="setting">
+          <div class="setting-info">
+            <i class="ri-map-pin-line" aria-hidden="true"></i>
+            <div class="setting-text">
+              <p>Location Sharing</p>
+              <span>Share location with emergency contacts</span>
+            </div>
+          </div>
+          <button
+            class="toggle toggle-switch"
+            data-setting="locationSharing"
+            role="switch"
+            aria-checked="false"
+            aria-label="Toggle location sharing"
+          ></button>
+        </div>
+
+        <!-- Auto Voice Recording -->
+        <div class="setting">
+          <div class="setting-info">
+            <i class="ri-mic-line" aria-hidden="true"></i>
+            <div class="setting-text">
+              <p>Auto Voice Recording</p>
+              <span>Record audio during emergencies</span>
+            </div>
+          </div>
+          <button
+            class="toggle toggle-switch"
+            data-setting="autoVoiceRecording"
+            role="switch"
+            aria-checked="false"
+            aria-label="Toggle auto voice recording"
+          ></button>
+        </div>
+      </section>
+
+      <!-- Emergency Numbers -->
+      <section class="settings-card" aria-label="Emergency contact numbers">
+        <h4>Emergency Numbers</h4>
+
+        <!-- Emergency Services -->
+        <div class="emergency-number" data-number="911" role="button" tabindex="0" aria-label="Call Emergency Services 911">
+          <div class="emergency-info">
+            <i class="ri-truck-medical-line" aria-hidden="true"></i>
+            <div class="emergency-text">
+              <p>Emergency Services</p>
+              <span>Police, Fire, Medical</span>
+            </div>
+          </div>
+          <span class="phone-number">911</span>
+        </div>
+
+        <!-- Domestic Violence Hotline -->
+        <div class="emergency-number" data-number="18007997233" role="button" tabindex="0" aria-label="Call Domestic Violence Hotline">
+          <div class="emergency-info">
+            <i class="ri-hand-heart-line" aria-hidden="true"></i>
+            <div class="emergency-text">
+              <p>Domestic Violence Hotline</p>
+              <span>24/7 Support</span>
+            </div>
+          </div>
+          <span class="phone-number">1-800-799-7233</span>
+        </div>
+
+        <!-- Crisis Text Line -->
+        <div class="emergency-number" data-number="741741" role="button" tabindex="0" aria-label="Text Crisis Text Line HOME to 741741">
+          <div class="emergency-info">
+            <i class="ri-chat-smile-3-line" aria-hidden="true"></i>
+            <div class="emergency-text">
+              <p>Crisis Text Line</p>
+              <span>Text HOME to 741741</span>
+            </div>
+          </div>
+          <span class="phone-number">741741</span>
+        </div>
+
+        <!-- RAINN Hotline -->
+        <div class="emergency-number" data-number="18006564673" role="button" tabindex="0" aria-label="Call RAINN Hotline">
+          <div class="emergency-info">
+            <i class="ri-heart-pulse-line" aria-hidden="true"></i>
+            <div class="emergency-text">
+              <p>RAINN Hotline</p>
+              <span>Rape, Abuse & Incest National Network</span>
+            </div>
+          </div>
+          <span class="phone-number">1-800-656-4673</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav" role="navigation" aria-label="Main navigation">
+      <a href="/index.html">
+        <i class="ri-home-4-line" aria-hidden="true"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="/pages/contacts.html">
+        <i class="ri-contacts-line" aria-hidden="true"></i>
+        <span>Contacts</span>
+      </a>
+      <a href="/pages/settings.html" class="active" aria-current="page">
+        <i class="ri-shield-line" aria-hidden="true"></i>
+        <span>Safety</span>
+      </a>
+      <a href="/pages/map.html">
+        <i class="ri-map-pin-line" aria-hidden="true"></i>
+        <span>Map</span>
+      </a>
+    </nav>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/settings.js"></script>
+  </body>
+</html>
